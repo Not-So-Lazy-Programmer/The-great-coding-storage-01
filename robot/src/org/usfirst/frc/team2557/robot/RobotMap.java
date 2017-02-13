@@ -17,6 +17,9 @@ public class RobotMap {
 	public static CANTalon motorBR;
 	public static CANTalon motorFL;
 	public static CANTalon motorFR;
+	public static CANTalon intake;
+	public static CANTalon motorArm1 ;
+	public static CANTalon motorArm2 ;
 	
 	public static void init () {
 	
@@ -24,8 +27,15 @@ public class RobotMap {
 		motorBR = new CANTalon(2);
 		motorFL = new CANTalon(3);
 		motorFR = new CANTalon(4);
+		intake = new CANTalon(5);
+		motorArm1 = new CANTalon(6);
+		motorArm2 = new CANTalon(7);
 		
 		robotdrive = new RobotDrive (motorBL,motorBR,motorFL,motorFR);
+		
+		
+		
+		
 		
 		
 		
