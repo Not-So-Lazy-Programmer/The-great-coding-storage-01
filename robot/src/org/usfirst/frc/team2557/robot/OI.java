@@ -26,19 +26,20 @@ public class OI {
 	public JoystickButton RightBumper = new JoystickButton (remote,6);
 	public JoystickButton BACKbutton = new JoystickButton (remote,7);
 	public JoystickButton STARTbutton = new JoystickButton (remote,8); 
-	public JoystickButton LeftTrigger = new JoystickButton (remote,9);
-	public JoystickButton RightTrigger = new JoystickButton (remote,10);
+	public JoystickButton LeftStick = new JoystickButton (remote,9);
+	public JoystickButton RightStick = new JoystickButton (remote,10);
 	public JoystickButton MODEbutton = new JoystickButton (remote,-1);
 	public JoystickButton LOGITECHbutton = new JoystickButton (remote,-1);
 	
 	
 	// Gamepad axis
-//		public static final int kGamepadAxisLeftStickX = 1;
-//		public static final int kGamepadAxisLeftStickY = 2;
-//		public static final int kGamepadAxisShoulder = 3;
+//		public static final int kGamepadAxisLeftStickX = 0;
+//		public static final int kGamepadAxisLeftStickY = 1;
+//		public static final int kGamepadAxisLeftShoulder = 2;
+//		public static final int kGamepadAxisRightShoulder = 3;
 //		public static final int kGamepadAxisRightStickX = 4;
 //		public static final int kGamepadAxisRightStickY = 5;
-//		public static final int kGamepadAxisDpad = 6;
+//		public static final int kGamepadAxisDpad = is a POV;
 //
 //		// Gamepad buttons
 //		public static final int kGamepadButtonA = 1; // Bottom Button

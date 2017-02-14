@@ -19,9 +19,9 @@ public class subsystem extends Subsystem {
     }
     
     public void drive() {
-    	RobotMap.robotdrive.arcadeDrive(0,0);
+//    	RobotMap.robotdrive.arcadeDrive(0,0);
     	
-    	RobotMap.myRobot.ArcadeDrive(Robot.oi.remote.getRawAxis(1),Robot.oi.remote.getRawAxis(0));
+    	RobotMap.robotdrive.arcadeDrive(Robot.oi.remote.getRawAxis(1),Robot.oi.remote.getRawAxis(0));
     	
     }
     
@@ -29,13 +29,13 @@ public class subsystem extends Subsystem {
     
     
     
-//	public static final int kGamepadAxisLeftStickX = 1;
-//	public static final int kGamepadAxisLeftStickY = 2;
-//	public static final int kGamepadAxisShoulder = 3;
+//	public static final int kGamepadAxisLeftStickX = 0;
+//	public static final int kGamepadAxisLeftStickY = 1;
+//	public static final int kGamepadAxisLeftShoulder = 2;
+//	public static final int kGamepadAxisRightShoulder = 3;
 //	public static final int kGamepadAxisRightStickX = 4;
 //	public static final int kGamepadAxisRightStickY = 5;
-//	public static final int kGamepadAxisDpad = 6;
-    
+//	public static final int kGamepadAxisDpad = is a POV;
     
     
     

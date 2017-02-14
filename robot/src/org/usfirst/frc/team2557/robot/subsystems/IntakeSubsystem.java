@@ -11,11 +11,11 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 public class IntakeSubsystem extends Subsystem {
 	public void intake(){
     
-		if (Robot.oi.d_up.get() == true){
+		if (Robot.oi.LeftBumper.get() == true){
 			RobotMap.intake.set(.75);
 
 		}
-		else if(Robot.oi.d_down.get() == true){
+		else if(Robot.oi.RightBumper.get() == true){
 		RobotMap.intake.set(-.75);
 		}
 		
