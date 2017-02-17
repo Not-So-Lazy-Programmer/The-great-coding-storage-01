@@ -13,13 +13,13 @@ public class ArmSubsystem extends Subsystem {
     public void arm(){
     	
 	if(Robot.oi.remote.getRawAxis(3)>0.1){
-		RobotMap.motorArm1.set(0);
-		RobotMap.motorArm2.set(0);
+		RobotMap.motorArm1.set(.70);
+		RobotMap.motorArm2.set(.70);
     }
 	
 	else if(Robot.oi.remote.getRawAxis(2)>0.1){
-		RobotMap.motorArm1.set(0);
-		RobotMap.motorArm2.set(0);
+		RobotMap.motorArm1.set(-.70);
+		RobotMap.motorArm2.set(-.70);
 		
 	}
 	

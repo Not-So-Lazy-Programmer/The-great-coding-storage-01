@@ -5,11 +5,16 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+
+import org.usfirst.frc.team2557.robot.commands.ArmCommand;
+import org.usfirst.frc.team2557.robot.commands.CatapultCommand;
 import org.usfirst.frc.team2557.robot.commands.ExampleCommand;
 import org.usfirst.frc.team2557.robot.commands.IntakeCommand;
 import org.usfirst.frc.team2557.robot.commands.drivecommand;
+import org.usfirst.frc.team2557.robot.subsystems.ArmSubsystem;
 import org.usfirst.frc.team2557.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team2557.robot.subsystems.IntakeSubsystem;
+import org.usfirst.frc.team2557.robot.subsystems.catapult;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -22,11 +27,17 @@ public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
+	public static ArmSubsystem armsubsystem = new ArmSubsystem();
+	public static catapult Catapult = new catapult();
+	
 public static IntakeSubsystem  intakesubsystem = new IntakeSubsystem();
 
     Command autonomousCommand;
 Command DriveCommand;
 Command intakeCommand;
+Command armcommand;
+Command catapult;
+
 
     /**
      * This function is run when the robot is first started up and should be
@@ -38,6 +49,8 @@ Command intakeCommand;
         autonomousCommand = new ExampleCommand();
         DriveCommand = new drivecommand();
         intakeCommand = new IntakeCommand();
+        armcommand = new ArmCommand();
+        catapult = new CatapultCommand();
     }
 	
 	public void disabledPeriodic() {
@@ -79,6 +92,8 @@ Command intakeCommand;
     	
     	DriveCommand.start();
     	intakeCommand.start();
+    	armcommand.start();
+    	catapult.start();
     	
         Scheduler.getInstance().run();
     }

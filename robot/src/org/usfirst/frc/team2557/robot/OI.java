@@ -22,8 +22,8 @@ public class OI {
 	public JoystickButton redB = new JoystickButton (remote,2);
 	public JoystickButton blueX = new JoystickButton (remote,3);
 	public JoystickButton yellowY = new JoystickButton (remote,4);
-	public JoystickButton LeftBumper = new JoystickButton (remote,5);
-	public JoystickButton RightBumper = new JoystickButton (remote,6);
+	public JoystickButton LeftBumper = new JoystickButton (remote,5); //taken
+	public JoystickButton RightBumper = new JoystickButton (remote,6); //taken
 	public JoystickButton BACKbutton = new JoystickButton (remote,7);
 	public JoystickButton STARTbutton = new JoystickButton (remote,8); 
 	public JoystickButton LeftStick = new JoystickButton (remote,9);
